@@ -1,21 +1,11 @@
-import React from 'react';
-import SearchBar from './SearchBar';
+import React from "react";
+import SongList from './SongList';
 
 
-class App extends React.Component {
+const App = () => {
+  return <div><SongList>
 
-onSearchSubmit = (term) => {
-console.log(term);
-}
-
-  render () {
-    return (
-      <div className="ui container" style={{ marginTop: '10px' }}>
-      <SearchBar onSubmit={ this.onSearchSubmit } />
-      </div>
-    );
-  };
-}
-
+  </SongList></div>
+};
 
 export default App;
